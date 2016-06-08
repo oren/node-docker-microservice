@@ -38,8 +38,10 @@ docker run -it -p 8123:8123 --link db:db -e DATABASE_HOST=DB users-service
 
 # Integration Testing
 
-To test the entire stack, run:
+To test the entire stack, run: `./test.sh`.
 
+
+test.sh
 ```bash
 docker-compose build
 docker-compose -d up
