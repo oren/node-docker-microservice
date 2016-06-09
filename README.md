@@ -44,7 +44,7 @@ To test the entire stack, run: `./test.sh`.
 test.sh
 ```bash
 docker-compose build
-docker-compose -d up
+docker-compose up -d
 sleep 10 # give the database server enough time to start!
 cd integration-test && npm start && cd ..
 docker-compose -d down
